@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+
+    <title>App Framework Kitchen Sink</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <script src="dist/sweetalert.min.js"></script>
+        
+
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
+        
+    <script src='cordova.js'></script>
+        
+        <script type="text/javascript" src="js/data.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+
+        
+            <script type="text/javascript">
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+
+            init_page();
+            
+        }
+        </script>
+
+</head>
+
+<body onload="onLoad()">
+    <div id="splashscreen" class='ui-loader heavy'>
+        App Framework
+        <br>
+        <br>
+        <span class='ui-icon ui-icon-loading spin'></span>
+        <h1>Starting app</h1>
+    </div>
+
+    <div class="view splitview">
+        
+        <header>
+            <a class="menuButton" data-right-menu="right" data-transition="flip" style="float:right"></a>
+            <h1>Berita Dakwah</h1>
+        </header>
+        
+        <div class="pages">
+            <div class="panel" id="main" data-title="Berita Dakwah" data-selected="true">
+                <ul id="main_list" class="list">      
+                </ul>
+            </div>
+            <div class="panel" id="bookmark" data-title="Bookmark">
+                This is Page 2
+            </div>
+            <div class="panel" id="single_feed" data-title="Page 3">
+                <ul id="news_content" class="list">      
+                </ul>
+            </div>
+            <div class="panel" data-title="Settings" id="setting">
+                <p>This is template for settings</p>
+                <ul class="list inset" id="settingsList">
+                    <li>
+                        <label>Setting One</label>
+                        <input id="toggle1" type="checkbox" name="toggle1" value="1" class="toggle" checked>
+                        <label style="left:70%" for="toggle1" data-on="On" data-off="Off"><span></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>Setting Two</label>
+                        <input id="toggle2" type="checkbox" name="toggle2" value="0" class="toggle">
+                        <label style="left:70%" for="toggle2" data-on="On" data-off="Off"><span></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav id="right">
+            <div class="view active">
+                <header onclick=''>
+                    <h1>Menu</h1>
+                    
+                </header>
+                <div class="pages">
+                    <div class="panel active" id="navPage1" data-title="Foobar">
+                        <ul class="list">
+                            <li class="fa fa-home fa-md green" onclick="$.afui.drawer.hide ('#right', 'right');jump_page('main')"> Home</li>
+                            <li class="fa fa-bookmark fa-md green" onclick="$.afui.drawer.hide ('#right', 'right');jump_page('bookmark')"> Bookmark</li>
+                            <li class="fa fa-cogs fa-md green" onclick="$.afui.drawer.hide ('#right', 'right');jump_page('setting')"> Setting</li>
+                            <li class="fa fa-window-close fa-md red" onclick="$.afui.drawer.hide ('#right', 'right');"> Close</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+</body>
+
+</html>

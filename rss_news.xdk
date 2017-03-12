@@ -1,0 +1,665 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "creationData": {
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+      "src": "jsapp/template-side-menu-js/sample.zip",
+      "projectGuid": "3781ced0-cdc3-40ed-aab4-7d43fb52f420",
+      "lastModifiedDate": 1489244513249,
+      "creationDate": 1489215770560
+    },
+    "sourceDirectory": "www",
+    "cordovaPluginsDirectory": "plugins",
+    "startFile": "index.html",
+    "projectFiles": {
+      "xdk-publish-meta-data.json": {
+        "settings": {
+          "project": {
+            "XDK-not-deployed": "True"
+          }
+        }
+      }
+    },
+    "projectDirectories": {
+      "www/xdk": {
+        "settings": {
+          "project": {
+            "XDK-generated": "true"
+          }
+        }
+      }
+    },
+    "libraries": [],
+    "cordovaPlugins": [
+      {
+        "id": "cordova-plugin-statusbar",
+        "name": "StatusBar",
+        "version": "2.1.3",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-statusbar",
+        "gitref": "",
+        "paramvals": {},
+        "selectedState": "Included",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {},
+        "description": "Cordova StatusBar Plugin",
+        "data": {},
+        "dependedBy": [],
+        "checksum": "c0146fbc"
+      },
+      {
+        "id": "cordova-plugin-device",
+        "version": "1.1.2",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-device",
+        "permissions": {},
+        "topLevel": true,
+        "gitref": "",
+        "name": "Device",
+        "description": "Cordova Device Plugin",
+        "checksum": "2373ccea"
+      },
+      {
+        "id": "cordova-plugin-splashscreen",
+        "version": "3.2.2",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-splashscreen",
+        "permissions": {},
+        "topLevel": true,
+        "gitref": "",
+        "name": "Splashscreen",
+        "description": "Cordova Splashscreen Plugin",
+        "checksum": "47137083",
+        "cordovaVersion": ">=3.1.0"
+      },
+      {
+        "id": "cordova-plugin-spinner",
+        "name": "Spinner Plugin",
+        "version": "1.1.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-spinner",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-spinner",
+        "selectedState": "Included",
+        "checksum": "2807eb7e",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {},
+        "description": "\n      A Cordova plugin to prevent user interaction using an animated spinner overlay during a blocking operation.\n    ",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
+      },
+      {
+        "id": "cordova-plugin-inappbrowser",
+        "name": "InAppBrowser",
+        "version": "1.4.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-inappbrowser",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-inappbrowser",
+        "selectedState": "Included",
+        "checksum": "f88bc51f",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {},
+        "description": "Cordova InAppBrowser Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-network-information",
+        "name": "Network Information",
+        "version": "1.2.1",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-network-information",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-network-information",
+        "selectedState": "Included",
+        "checksum": "9d8331a4",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.ACCESS_NETWORK_STATE"
+          ]
+        },
+        "description": "Cordova Network Information Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-x-socialsharing",
+        "name": "SocialSharing",
+        "version": "5.1.6",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-x-socialsharing",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-x-socialsharing",
+        "selectedState": "Included",
+        "checksum": "d14484dd",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "author": "Eddy Verbruggen",
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "\n    Share text, images (and other files), or a link via the native sharing widget of your device.\n    Android is fully supported, as well as iOS 6 and up. WP8 has somewhat limited support.\n  ",
+        "data": {},
+        "dependedBy": []
+      }
+    ],
+    "serviceMethods": [],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
+        "name_": "Android",
+        "preferences_": {
+          "android-minSdkVersion": "14",
+          "android-targetSdkVersion": "21",
+          "android-installLocation": "auto",
+          "android-signed": true
+        },
+        "isActive_": true,
+        "certificateId_": "ZCEw_XBRuU63FmSlwcnKow2",
+        "appName_": "BeritaDakwah",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "market:*"
+          ],
+          "navigation": []
+        },
+        "icons_": [
+          {
+            "density": "ldpi",
+            "relPath": "package-assets/36_Icon.png",
+            "width": 36,
+            "height": 36
+          },
+          {
+            "density": "mdpi",
+            "relPath": "package-assets/48_Icon.png",
+            "width": 48,
+            "height": 48
+          },
+          {
+            "density": "hdpi",
+            "relPath": "package-assets/72_Icon.png",
+            "width": 72,
+            "height": 72
+          },
+          {
+            "density": "xhdpi",
+            "relPath": "package-assets/96_Icon.png",
+            "width": 96,
+            "height": 96
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "package-assets/loadingimage-320x426.png",
+            "density": "ldpi",
+            "height": 426,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-320x470.png",
+            "density": "mdpi",
+            "height": 470,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-480x640.png",
+            "density": "hdpi",
+            "height": 640,
+            "width": 480,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-720x960.png",
+            "density": "xhdpi",
+            "height": 960,
+            "width": 720,
+            "orientation": "portrait"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "6.2.0",
+        "appVersion_": "0.0.1",
+        "appVersionCode_": "1",
+        "crosswalkVersion_": "19",
+        "appAuthor_": "Intel XDK",
+        "signed_": true
+      },
+      "iOS": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "iOS",
+        "preferences_": {
+          "ios-configuration": "adhoc",
+          "deployment-target": "8.0",
+          "Fullscreen": true,
+          "Orientation": "portrait"
+        },
+        "isActive_": true,
+        "certificateId_": "7iU7eEDpqUK3Qqyjqy4aFw2",
+        "appName_": "Berita Dakwah",
+        "appID_": "com.mobiazzam.devapps.beritadakwah",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "itms:*",
+            "itms-apps:*"
+          ],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [
+          {
+            "relPath": "package-assets/29_Icon.png",
+            "width": 29,
+            "height": 29
+          },
+          {
+            "relPath": "package-assets/58_Icon.png",
+            "width": 58,
+            "height": 58
+          },
+          {
+            "relPath": "package-assets/87_Icon.png",
+            "width": 87,
+            "height": 87
+          },
+          {
+            "relPath": "package-assets/60_Icon.png",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "relPath": "package-assets/120_Icon.png",
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relPath": "package-assets/180_spot.png",
+            "width": 180,
+            "height": 180
+          },
+          {
+            "relPath": "package-assets/76_Icon.png",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "relPath": "package-assets/152_spot.png",
+            "width": 152,
+            "height": 152
+          },
+          {
+            "relPath": "package-assets/40_Icon.png",
+            "width": 40,
+            "height": 40
+          },
+          {
+            "relPath": "package-assets/80_Icon.png",
+            "width": 80,
+            "height": 80
+          },
+          {
+            "relPath": "package-assets/57_Icon.png",
+            "width": 57,
+            "height": 57
+          },
+          {
+            "relPath": "package-assets/114_Icon.png",
+            "width": 114,
+            "height": 114
+          },
+          {
+            "relPath": "package-assets/72_Icon.png",
+            "width": 72,
+            "height": 72
+          },
+          {
+            "relPath": "package-assets/144_Icon.png",
+            "width": 144,
+            "height": 144
+          },
+          {
+            "relPath": "package-assets/50_spot.png",
+            "width": 50,
+            "height": 50
+          },
+          {
+            "relPath": "package-assets/100_spot.png",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "relPath": "package-assets/167_spot.png",
+            "width": 167,
+            "height": 167
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "package-assets/loadingimage-320x480.png",
+            "height": 480,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-640x960.png",
+            "height": 960,
+            "width": 640,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-640x1136.png",
+            "height": 1136,
+            "width": 640,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-750x1334.png",
+            "height": 1334,
+            "width": 750,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-768x1024.png",
+            "height": 1024,
+            "width": 768,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-1242x2208.png",
+            "height": 2208,
+            "width": 1242,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-1536x2048.png",
+            "height": 2048,
+            "width": 1536,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/loadingimage-2048x2732.png",
+            "height": 2732,
+            "width": 2048,
+            "orientation": "portrait"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [
+          {
+            "relPath": "package-assets/beritadakwah_adhoc.mobileprovision",
+            "type": "adhoc"
+          },
+          {
+            "relPath": "package-assets/beritadakwah_dist.mobileprovision",
+            "type": "production"
+          }
+        ],
+        "cordovaCLIVersion_": "6.2.0",
+        "appVersion_": "1.1.9",
+        "appAuthor_": "mobiazzam.com",
+        "crosswalkVersion_": "19",
+        "appVersionCode_": "1.1.9",
+        "appDescription_": "Berita Dakwah"
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "preferences_": {},
+        "isActive_": true,
+        "certificateId_": "",
+        "appName_": "BeritaDakwah",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*"
+          ],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [
+          {
+            "relPath": "package-assets/50_spot.png",
+            "width": 50,
+            "height": 50
+          },
+          {
+            "relPath": "package-assets/44_Icon.png",
+            "width": 44,
+            "height": 44
+          },
+          {
+            "relPath": "package-assets/71_Icon.png",
+            "width": 71,
+            "height": 71
+          },
+          {
+            "relPath": "package-assets/150_spot.png",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "relPath": "package-assets/310_150_spot.png",
+            "width": 310,
+            "height": 150
+          },
+          {
+            "relPath": "package-assets/310_310_spot.png",
+            "width": 310,
+            "height": 310
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "package-assets/radioimsalogo-620x300.png",
+            "height": 300,
+            "width": 620,
+            "orientation": "landscape"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "6.2.0",
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK",
+        "crosswalkVersion_": "19"
+      },
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "side-menu-js",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK"
+      },
+      "Firefox": {
+        "platform_": "firefoxos",
+        "runtime_": "W3C on Firefox OS",
+        "name_": "Firefox",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "side-menu-js",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "BeritaDakwah",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK"
+      },
+      "Facebook": {
+        "platform_": "facebook",
+        "runtime_": "W3C on Facebook",
+        "name_": "Facebook",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "side-menu-js",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK"
+      },
+      "WP81": {
+        "platform_": "wp81",
+        "runtime_": "Cordova 3.x",
+        "name_": "WP81",
+        "preferences_": {},
+        "isActive_": true,
+        "certificateId_": "",
+        "appName_": "BeritaDakwah",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "http://debug-software.intel.com/*",
+            "https://debug-software.intel.com/*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.0.1",
+        "cordovaCLIVersion_": "6.2.0",
+        "appAuthor_": "Intel XDK"
+      }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "projectTags": [
+      "XDK-disallow-legacy-whitelist"
+    ],
+    "testDirectory": "test"
+  }
+}
